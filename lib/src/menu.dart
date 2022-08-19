@@ -110,6 +110,10 @@ req.send();''');
           },
           itemBuilder: (context) => [
             const PopupMenuItem<_MenuOptions>(
+              value: _MenuOptions.loadFlutterAsset,
+              child: Text('Load Amplify App'),
+            ),
+            const PopupMenuItem<_MenuOptions>(
               value: _MenuOptions.navigationDelegate,
               child: Text('Navigate to YouTube'),
             ),
@@ -140,10 +144,6 @@ req.send();''');
             const PopupMenuItem<_MenuOptions>(
               value: _MenuOptions.removeCookie,
               child: Text('Remove cookie'),
-            ),
-            const PopupMenuItem<_MenuOptions>(
-              value: _MenuOptions.loadFlutterAsset,
-              child: Text('Load Flutter Asset'),
             ),
             const PopupMenuItem<_MenuOptions>(
               value: _MenuOptions.loadHtmlString,
